@@ -23,7 +23,9 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  cloud_firestore: ^0.14.4
   cupertino_icons: ^1.0.1
+  firebase_core: ^0.5.3
   font_awesome_flutter: ^8.10.1
   get: ^3.22.2
 
