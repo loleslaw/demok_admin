@@ -36,10 +36,36 @@
   <script>
     if ('serviceWorker' in navigator) {
       window.addEventListener('flutter-first-frame', function () {
-        navigator.serviceWorker.register('flutter_service_worker.js?v=765235568');
+        navigator.serviceWorker.register('flutter_service_worker.js?v=1514114350');
       });
     }
   </script>
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.2.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-firestore.js"></script>
+
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/8.2.0/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  var firebaseConfig = {
+    apiKey: "AIzaSyB0xxm4BueRbDUrrl7_CnDc2H1cXw2ZKH0",
+    authDomain: "demok-8520e.firebaseapp.com",
+    databaseURL: "https://demok-8520e-default-rtdb.europe-west1.firebasedatabase.app",
+    projectId: "demok-8520e",
+    storageBucket: "demok-8520e.appspot.com",
+    messagingSenderId: "849296361458",
+    appId: "1:849296361458:web:493f237564f776b2010d6b",
+    measurementId: "G-T4FZM13R9E"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
   <script src="main.dart.js" type="application/javascript"></script>
 </body>
 </html>
